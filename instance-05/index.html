@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>instance-05</title>
+  </head>
+  <body>
+    
+    <!--first mounting point-->
+    <div id="app1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="page-header text-center hello__title">{{ title }}</h2>
+            <button @click="onShow" class="btn btn-primary" type="button">Show Paragraph</button>
+            <p class="text-center hello__text" v-if="showParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet nulla, vel est corrupti ratione veniam culpa iste magni, blanditiis saepe minima necessitatibus quas rerum ab nostrum adipisci repellat dicta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--second mounting point-->
+    <div id="app2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="page-header text-center secondo__title">{{ title }}</h2>
+            <p class="secondo__text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam rerum eaque, ad obcaecati deleniti recusandae consectetur voluptate numquam, non rem asperiores illum, expedita illo iusto consequuntur reprehenderit mollitia ea ducimus.</p>
+            <p ref="paragraphSecondo" class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet nulla, vel est corrupti ratione veniam culpa iste magni, blanditiis saepe minima necessitatibus quas rerum ab nostrum adipisci repellat dicta.</p>
+            <p>
+              <a ref="linkSecondo" href="#">Original Link Secondo</a>
+            </p>
+            <button @click="onChange" type="button" class="btn btn-primary">Change Title Applet Primo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--third mounting point-->
+    <div id="app3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="page-header text-center secondo__title">{{ title }}</h2>
+            <p class="secondo__text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam rerum eaque, ad obcaecati deleniti recusandae consectetur voluptate numquam, non rem asperiores illum, expedita illo iusto consequuntur reprehenderit mollitia ea ducimus.</p>
+            <p ref="paragraphTetro" class="text-center"><strong>Tetro</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet nulla, vel est corrupti ratione veniam culpa iste magni, blanditiis saepe minima necessitatibus quas rerum ab nostrum adipisci repellat dicta.</p>
+            <p><a ref="linkTetro" href="#">Original Link Secondo</a></p>
+            <button @click="onChange" type="button" class="btn btn-primary">Change Link Applet Tetro</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <hello></hello>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="btn-group" role="group" aria-label="...">
+              <button id="colOne" type="button" class="btn btn-default">Applet One Collection</button>
+              <button id="colTwo" type="button" class="btn btn-default">Applet Two Collection</button>
+              <button id="colThree" type="button" class="btn btn-default">Applet Three Collection</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--fourth mounting point-->
+    <div id="app4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="page-header text-center">{{ title }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

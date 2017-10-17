@@ -1,0 +1,52 @@
+[
+   {
+      "id": 1,
+      "name": "Peter",
+      "status": false
+   },
+   {
+      "id": 2,
+      "name": "Max",
+      "status": false
+   },
+   {
+      "id": 3,
+      "name": "Anna",
+      "status": false
+   },
+   {
+      "id": 4,
+      "name": "John",
+      "status": false
+   },
+   {
+      "id": 5,
+      "name": "Ivan",
+      "status": false
+   },
+   {
+      "id": 6,
+      "name": "Nicole",
+      "status": false
+   },
+   {
+      "id": 7,
+      "name": "George",
+      "status": false
+   },
+   {
+      "id": 8,
+      "name": "Maria",
+      "status": false
+   },
+   {
+      "id": 9,
+      "name": "Jeff",
+      "status": false
+   },
+   {
+      "id": 5,
+      "name": "Isaac",
+      "status": false
+   }
+]
